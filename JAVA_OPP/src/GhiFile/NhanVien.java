@@ -4,20 +4,20 @@
  */
 package GhiFile;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
 /**
  *
  * @author HP
  */
-public class NhanVien {
+public class NhanVien implements Serializable{
     private String maNhanVien;
     private String hoTen;
     private int tuoi;
     private float luong;
-    private Scanner sc;
     public NhanVien() {
-        sc= new Scanner(System.in);
+       
     }
 
     public NhanVien(String maNhanVien, String hoTen, int tuoi, float luong) {
@@ -59,6 +59,7 @@ public class NhanVien {
         this.luong = luong;
     }
     public void NhapNV(){
+        Scanner sc= new Scanner(System.in);
         System.out.print("Nhap ma nhan vien:");
         this.maNhanVien = sc.nextLine();
         System.out.print("Nhap ho va ten nhan vien:");

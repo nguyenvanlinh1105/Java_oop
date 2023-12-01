@@ -27,9 +27,9 @@ public class main {
             }else if(luaChon ==2){
                 DS.hienThiNhanVien();
             }else if(luaChon==3){
-                DS.WriteFile();
+                DS.GhiFile();
             }else if(luaChon==4){
-                DS.ReadFile();
+                DS.DocFile();
                 DS.hienThiNhanVien();
             }else{
                 break;
